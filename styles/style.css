@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap");
+
+:root {
+  --mainBgColor: #fff;
+  --textColor: #000;
+  --paraColor: rgb(51 51 51);
+  --linkColor: #3498db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  background: var(--mainBgColor);
+  transition: all 0.4s ease-in-out;
+}
+
+body.dark {
+  --mainBgColor: #131415;
+  --textColor: #fff;
+  --paraColor: #adb0b1;
+  --linkColor: #3498db;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  position: relative;
+}
+
+#theme-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+section h2 {
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+#hero {
+  color: var(--textColor);
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-weight: 300;
+  margin: 5px 0;
+  line-height: 1.6;
+  color: var(--paraColor);
+  margin-bottom: 7px;
+}
+
+#social-links {
+  padding: 2rem 0;
+}
+
+.social-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.social-links-list a {
+  transition: color 0.4s ease;
+  font-size: 15px;
+  color: var(--paraColor);
+}
+
+.social-links-list a:hover {
+  color: var(--linkColor);
+}
+
+#skills {
+  margin-top: 1rem;
+}
+
+.skills-container {
+  padding: 1.5rem 2rem;
+}
+
+.skill-card {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: var(--paraColor);
+}
+
+.skill-card span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+#strengths {
+  margin-bottom: 1.5rem;
+}
+
+#strengths h2 {
+  margin: 1rem 0;
+}
+
+.strengths-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.strength-box {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--paraColor);
+  border-radius: 1px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: var(--paraColor);
+}
+
+#education h2 {
+  margin-bottom: 2rem;
+}
+
+.education-card {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+
+  gap: 1rem;
+}
+
+.education-card:last-child {
+  border-bottom: 0;
+}
+
+.percentage {
+  color: var(--textColor);
+}
+
+.education-card h4 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--textColor);
+}
+
+.education-card .edu-name,
+.education-card .edu-year {
+  margin-bottom: 10px;
+  color: var(--paraColor);
+}
+
+.education-card .edu-year {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+    padding-top: 3rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .bio {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .education-card {
+    padding: 1rem;
+  }
+
+  .education-card h4 {
+    font-size: 18px;
+  }
+  .education-card .edu-name {
+    font-size: 15px;
+  }
+}
